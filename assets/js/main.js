@@ -54,7 +54,7 @@ $('.nav-btns i').on('click', function () {
 
 $(document).on('click', '.card', function () {
             $('.black-nav').animate({ width: 0 }, 600);
-    $('.white-nav .nav-btns i').toggleClass('fa-bars fs-2 fa-xmark fs-1');
+    $('.white-nav .nav-btns i').addClass('fa-bars fs-2');
 
 });
 
