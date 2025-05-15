@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="icon" href="assets/imgs/logo.png">
+
+    <!--font awsome-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--animate library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <!--css files-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="bg-black vh-100">
+
+    <!--Loading Screen-->
+    <div class="loading">
+
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
+    </div>
+
+    <!--Side Nav-->
+    <div class="side-nav vh-100 d-flex position-fixed z-3 bg-black top-0">
+
+        <div class="black-nav d-flex flex-column justify-content-between bg-black py-3 my-2 overflow-hidden vh-100">
+
+            <nav class="px-2">
+
+                <ul class="nav flex-column">
+
+                    <li class="nav-item li1">
+                        <a class="nav-link text-white search" aria-current="page" href="#Search">Search</a>
+                    </li>
+
+                    <li class="nav-item li2">
+                        <a class="nav-link text-white category" href="#Category">Categories</a>
+                    </li>
+
+                    <li class="nav-item li3">
+                        <a class="nav-link text-white area" href="#Area">Area</a>
+                    </li>
+
+                    <li class="nav-item li4">
+                        <a class="nav-link text-white ingredient" href="#Ingredient">Ingredients</a>
+                    </li>
+
+                    <li class="nav-item li5">
+                        <a class="nav-link text-white contactus" href="#Contactus">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="text-white px-4 w-100 text-nowrap mb-3">
+
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe "></i>
+
+                <p>Copyright Â© 2019 All Rights<br> Reserved.</p>
+            </div>
+
+        </div>
+
+
+        <div class="white-nav d-flex flex-column justify-content-between align-items-center bg-white py-4 px-2 vh-100">
+
+            <div class="nav-logo">
+                <img src="assets/imgs/logo.png" alt="logo-img" style="width: 50px">
+            </div>
+
+            <div class="nav-btns">
+                <i class="fa-solid fa-bars fs-2"></i>
+            </div>
+
+            <div class="nav-icons d-flex flex-column">
+                <i class="fa-solid fa-globe "></i>
+                <i class="fa-solid fa-share-nodes py-1"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+    <main>
+
+        <section id="Home" class="home pt-5">
+
+            <div class="container">
+                <div class="row g-4 cards">
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="Details" class="details pt-5">
+
+            <div class="container">
+                <div class="row details-container g-4 text-white">
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="Display" class="display pt-5">
+
+            <div class="container">
+                <div class="row g-4 cards">
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="Filter" class="filter pt-5">
+
+            <div class="container">
+                <div class="row g-4 cards">
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="Search" class="searchsection pt-4">
+
+            <div class="container w-75 pb-4">
+                <div class="row pb-5">
+
+                    <div class="col-md-6">
+                        <input type="search" class="form-control bg-transparent text-white inputname"
+                            placeholder="Search By Name">
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="search" class="form-control bg-transparent text-white inputletter"
+                            placeholder="Search By First Letter" maxlength="1">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container searchResult">
+                <div class="row g-4 cards">
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="Contact" class="contact ms-5">
+            <div class="container w-75 position-absolute top-50 start-50 translate-middle">
+
+                <form class="px-4 d-flex flex-column align-items-center">
+
+                    <div class="form-row d-flex justify-content-center mb-3 w-100">
+
+                        <div class="form-group col-md-5 me-3 position-relative">
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter Your Name">
+                            <p class="alert alert-danger nameError d-none">Special characters and numbers not allowed
+                            </p>
+                        </div>
+
+                        <div class="form-group col-md-5 position-relative">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Enter Your Email">
+                            <p class="alert alert-danger emailError bg-danger d-none">Email not valid *exemple@yyy.zzz
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row d-flex justify-content-center mb-3 w-100">
+
+                        <div class="form-group col-md-5 me-3 position-relative">
+                            <input type="tel" class="form-control" id="inputPhone" placeholder="Enter Your Phone">
+                            <p class=" alert alert-danger phoneError d-none">Enter valid Phone Number</p>
+                        </div>
+
+                        <div class="form-group col-md-5 position-relative">
+                            <input type="number" class="form-control" id="inputAge" placeholder="Enter Your Age">
+                            <p class="alert alert-danger ageError d-none">Enter valid age</p>
+                        </div>
+                    </div>
+
+                    <div class="form-row d-flex justify-content-center mb-3 w-100">
+
+                        <div class="form-group col-md-5 me-3 position-relative">
+                            <input type="password" class="form-control" id="inputPassword"
+                                placeholder="Enter Your Password">
+                            <p class="alert alert-danger passError d-none">Enter valid password *Minimum eight
+                                characters, at least one letter and
+                                one number:*</p>
+
+                        </div>
+
+                        <div class="form-group col-md-5 position-relative">
+                            <input type="password" class="form-control" id="inputRepassword" placeholder="Repassword">
+                            <p class="alert alert-danger repassError d-none">Enter valid repassword</p>
+
+                        </div>
+                    </div>
+
+
+
+                    <button type="submit" class="btn btn-outline-danger disabled">Submit</button>
+                </form>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
